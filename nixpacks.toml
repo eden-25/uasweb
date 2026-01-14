@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [phases.setup]
 nixPkgs = ["php83", "php83Packages.composer"]
 
@@ -5,4 +6,13 @@ nixPkgs = ["php83", "php83Packages.composer"]
 cmds = ["composer install --no-dev --optimize-autoloader"]
 
 [start]
+=======
+[phases.setup]
+nixPkgs = ["php83", "php83Packages.composer"]
+
+[phases.install]
+cmds = ["composer install --no-dev --optimize-autoloader"]
+
+[start]
+>>>>>>> 1276421bc5533155ea33ae5595adf3cc85cb0725
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
